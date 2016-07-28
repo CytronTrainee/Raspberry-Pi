@@ -32,12 +32,13 @@ try:
     def forward():
       GPIO.output(DIG1, GPIO.HIGH)
       GPIO.output(DIG2, GPIO.HIGH)
-#01000    
-    if (s1==0)and(s2==1)and(s3==0)and(s4==0)and(s5==0):
-      print "left4"
+      
+#10000
+    if (s1==1)and(s2==0)and(s3==0)and(s4==0)and(s5==0):
+      print "left1"
       forward()
       p1.start(20)
-      p2.start(9)
+      p2.start(0)
       sleep(0.5)
 #11000
     elif (s1==1)and(s2==1)and(s3==0)and(s4==0)and(s5==0):
@@ -46,12 +47,26 @@ try:
       p1.start(20)
       p2.start(5)
       sleep(0.5)
-#10000
-    elif (s1==1)and(s2==0)and(s3==0)and(s4==0)and(s5==0):
-      print "left1"
+#11100
+    elif (s1==1)and(s2==1)and(s3==1)and(s4==0)and(s5==0):
+      print "left3"
       forward()
       p1.start(20)
-      p2.start(0)
+      p2.start(7.5)
+      sleep(0.5)
+#01000    
+    elif (s1==0)and(s2==1)and(s3==0)and(s4==0)and(s5==0):
+      print "left4"
+      forward()
+      p1.start(20)
+      p2.start(9)
+      sleep(0.5)
+#01100
+    elif (s1==0)and(s2==1)and(s3==1)and(s4==0)and(s5==0):
+      print "left5"
+      forward()
+      p1.start(20)
+      p2.start(14)
       sleep(0.5)
 #00001
     elif (s1==0)and(s2==0)and(s3==0)and(s4==0)and(s5==1):
@@ -81,13 +96,7 @@ try:
       p1.start(9)
       p2.start(20)
       sleep(0.5)
-#01100
-    elif (s1==0)and(s2==1)and(s3==1)and(s4==0)and(s5==0):
-      print "left5"
-      forward()
-      p1.start(20)
-      p2.start(14)
-      sleep(0.5)
+
 #00110
     elif (s1==0)and(s2==0)and(s3==1)and(s4==1)and(s5==0):
       print "right5"
@@ -101,13 +110,6 @@ try:
       forward()
       p1.start(20)
       p2.start(20)
-      sleep(0.5)
-#11100
-    elif (s1==1)and(s2==1)and(s3==1)and(s4==0)and(s5==0):
-      print "left3"
-      forward()
-      p1.start(20)
-      p2.start(7.5)
       sleep(0.5)
 #00100
     elif (s1==0)and(s2==0)and(s3==1)and(s4==0)and(s5==0):
