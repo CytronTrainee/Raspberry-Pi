@@ -101,15 +101,15 @@ try:
       p1.start(12)
       p2.start(20)
       sleep(0.5)
-#01110
-    elif (s1==0)and(s2==1)and(s3==1)and(s4==1)and(s5==0):
+#00100
+    elif (s1==0)and(s2==0)and(s3==1)and(s4==0)and(s5==0):
       print "straight1"
       forward()
       p1.start(20)
       p2.start(20)
       sleep(0.5)
-#00100
-    elif (s1==0)and(s2==0)and(s3==1)and(s4==0)and(s5==0):
+#01110
+    elif (s1==0)and(s2==1)and(s3==1)and(s4==1)and(s5==0):
       print "straight2"
       forward()
       p1.start(20)
