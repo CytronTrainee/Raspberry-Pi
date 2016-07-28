@@ -6,7 +6,6 @@ AN2 = 25
 AN1 = 24
 DIG2 = 23
 DIG1 = 18
-
 GPIO.setup(AN2, GPIO.OUT)
 GPIO.setup(AN1, GPIO.OUT)
 GPIO.setup(DIG2, GPIO.OUT)
@@ -32,7 +31,6 @@ try:
     def forward():
       GPIO.output(DIG1, GPIO.HIGH)
       GPIO.output(DIG2, GPIO.HIGH)
-      
 #10000
     if (s1==1)and(s2==0)and(s3==0)and(s4==0)and(s5==0):
       print "left1"
@@ -96,7 +94,6 @@ try:
       p1.start(9)
       p2.start(20)
       sleep(0.5)
-
 #00110
     elif (s1==0)and(s2==0)and(s3==1)and(s4==1)and(s5==0):
       print "right5"
